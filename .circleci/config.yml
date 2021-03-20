@@ -4,4 +4,7 @@ node: circleci/node@3.0.0
 workflows:
 node-tests:
 jobs:
- "node/test"
+ - node/test 
+ git add .
+ git commit -m 'b'
+git push
